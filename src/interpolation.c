@@ -14,8 +14,8 @@
 #define INTERPOLATION_TERMINATOR 0xff
 
 // these are the conversion factors required to turn into floating point values (multiply table values by these)
-const float x_scaler[EGG_BUS_NUM_HOSTED_SENSORS] = {0.4f};
-const float y_scaler[EGG_BUS_NUM_HOSTED_SENSORS] = {1.7f};
+const float x_scaler[EGG_BUS_NUM_HOSTED_SENSORS] = {0.00051f};
+const float y_scaler[EGG_BUS_NUM_HOSTED_SENSORS] = {1.6f};
 const float independent_scaler[EGG_BUS_NUM_HOSTED_SENSORS] = {0.0001f};
 const uint32_t independent_scaler_inverse[EGG_BUS_NUM_HOSTED_SENSORS] = { 10000 };
 
@@ -24,14 +24,15 @@ uint8_t getTableValue(uint8_t sensor_index, uint8_t table_index, uint8_t get_x_o
 
     // the values MUST be provided in ascending order of x-value
     const uint8_t voc_ppb[][2] = {
-            {62,117},
-            {75,131},
-            {101,152},
-            {149,188},
-            {174,204},
-            {199,219},
-            {223,233},
-            {247,246},
+            {254,19},
+            {195,29},
+            {157,43},
+            {136,54},
+            {117,68},
+            {97,94},
+            {78,136},
+            {58,221},
+            {53,254},
             {INTERPOLATION_TERMINATOR, INTERPOLATION_TERMINATOR}
     };
 

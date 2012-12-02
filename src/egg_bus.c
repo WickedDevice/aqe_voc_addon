@@ -21,7 +21,7 @@ PGM_P egg_bus_sensor_types[] PROGMEM = {
         egg_bus_sensor_type_0
 };
 
-char egg_bus_sensor_units_0[] PROGMEM = "ppb";
+char egg_bus_sensor_units_0[] PROGMEM = "ppm";
 PGM_P egg_bus_sensor_units[] PROGMEM = {
         egg_bus_sensor_units_0
 };
