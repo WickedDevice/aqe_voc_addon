@@ -23,7 +23,7 @@
 #define __DELAY_BACKWARD_COMPATIBLE__
 #include <util/delay.h>
 
-//#define INCLUDE_DEBUG_REGISTERS
+#define INCLUDE_DEBUG_REGISTERS
 
 void onRequestService(void);
 void onReceiveService(uint8_t* inBytes, int numBytes);
