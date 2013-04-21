@@ -73,6 +73,10 @@ uint8_t get_sensor_vcc(uint8_t sensor_index){
     return sensor_index == 0 ? VOC_VCC_TENTH_VOLTS : 0xFFFFFFFF;
 }
 
+uint16_t get_sensor_min_adc_high_r(uint8_t sensor_index){
+    return sensor_index == 0 ? VOC_MIN_ADC_HIGH_R : 0xFFFFFFFF;
+}
+
 void SENSOR_R2_ENABLE(uint8_t sensor_index){
     if(sensor_index == 0){
         VOC_R2_ENABLE();
@@ -96,3 +100,4 @@ void SENSOR_R3_DISABLE(uint8_t sensor_index){
         VOC_R3_DISABLE();
     }
 }
+
