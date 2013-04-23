@@ -69,7 +69,7 @@ uint16_t get_r1r2_threshold(uint8_t sensor_index){
     return sensor_index == 0 ? VOC_R1R2_THRESHOLD : 0xFFFFFFFF;
 }
 
-uint8_t get_sensor_vcc(uint8_t sensor_index){
+uint32_t get_sensor_vcc(uint8_t sensor_index){
     return sensor_index == 0 ? VOC_VCC_TENTH_VOLTS : 0xFFFFFFFF;
 }
 
