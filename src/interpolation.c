@@ -24,6 +24,7 @@ uint8_t getTableValue(uint8_t sensor_index, uint8_t table_index, uint8_t get_x_o
 
     // the values MUST be provided in ascending order of x-value
     const uint8_t voc_ppb[][2] = {
+            {0,0},
             {254,19},
             {195,29},
             {157,43},
