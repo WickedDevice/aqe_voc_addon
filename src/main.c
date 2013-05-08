@@ -41,7 +41,7 @@ void main(void) {
 
     digipot_increment(DIGIPOT_WIPER0, 255);
 
-    for(ii = 0; ii < 186; ii++){
+    for(ii = 0; ii < 195; ii++){
         digipot_decrement(DIGIPOT_WIPER0, 1);
     }
 
